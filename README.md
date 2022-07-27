@@ -36,33 +36,43 @@ date || credit || debit || balance
 
 The application has been buil on Node.js. To install Node run the command below:
 
+```
 npm install -g npm
+```
 
 Jest has been used for testing and Eslint to find and detect issues within the Javascript code. These dependencies are listed within the package.json and can therefore be installed using the command below.
 
+```
 npm install
+```
 
 ### Running the program
 
 The program can be launched via Node
 
+```
 node
 Statement = require('./Statement')
 account = new Statement()
+```
 
 Once we have instantiated an instance of the class, we can begin using the various functions, such as deposit, withdrawal and printing statement.
 
+```
 account.deposit(1000, "23-01-2023")
 account.withdraw(500, "24-02-2023")
 account.withdraw(250, "12-03-2023")
 account.createStatement()
+```
 
 Expected Output
 
+```
 date || credit || debit || balance
 12/03/2023 || || 250.00 || 250.00
 24/02/2023 || || 500.00 || 500.00
 23/01/2023 || 1000.00 || || 1000.00
+```
 
 ## Screenshots
 
